@@ -1,0 +1,114 @@
+/*
+ * comments
+ */
+ #node-comment {
+  position: relative;
+  margin: 0;
+  border-top: 4px double var(--border-color);
+}
+#node-comment i {
+  color: var(--theme-color);
+}
+.comments-title i {
+  font-size: 1em;
+}
+
+/* Comments -> comment form. */
+.comment-form-wrap {
+  position: relative;
+  margin: 10px 0;
+  padding: 20px;
+  background: #f5f4f0;
+  border: 2px solid var(--border-color);
+}
+.add-comment-title {
+  margin: 0;
+}
+.add-comment-title i {
+  font-size: 1em;
+}
+.comment-form label {
+  display: block;
+}
+.filter-wrapper {
+  font-size: 0.9em;
+  border: 2px solid #fff;
+}
+.filter-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+.filter-wrapper ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid #fff;
+}
+.filter-wrapper ul li:last-child {
+  border: 0;
+}
+
+/* Comments -> single comment */
+.single-comment {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 10px 0;
+  background: #ffffff;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+}
+.comment-user-picture {
+  position: relative;
+  flex: 0 0 100px;
+  padding: 0 10px;
+  border-right: 2px solid var(--border-color);
+  text-align: center;
+}
+.comment-user-picture img {
+  max-width: 100px;
+  height: auto;
+}
+.single-comment-content-body {
+  position: relative;
+  flex: 1 0 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+h3.single-comment-title {
+  margin: 0.1em 0;
+  font-size: 1.2em;
+}
+.single-comment-meta {
+  width: 100%;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  font-size: 0.9em;
+  color: #909090;
+  border-bottom: 2px solid var(--border-color);
+}
+.single-comment-meta a {
+  color: #909090;
+}
+#node-comment .indented {
+  margin-left: 60px;
+}
+.comment-reply a,
+.comment-delete a,
+.comment-edit a {
+  padding: 2px 6px;
+  border: 1px dashed var(--theme-color);
+  border-radius: 4px;
+}
+.comment-reply a:hover,
+.comment-delete a:hover,
+.comment-edit a:hover {
+  background: var(--theme-color);
+  color: #fff;
+}
+.comment-delete,
+.comment-edit {
+  margin-right: 4px;
+}

@@ -1,0 +1,77 @@
+/*
+ * Sidebar
+ */
+ .sidebar {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+}
+#sidebar-left {
+  padding: 0 20px 0 0;
+}
+#sidebar-right {
+  padding: 0 0 0 20px;
+}
+/* Sidebar -> Sidebar block */
+.sidebar .block {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 0 4px #d8d8d8;
+}
+.sidebar .block-title {
+  position: relative;
+  color: var(--bold-color);
+  padding: 0 0 10px 0;
+}
+.sidebar h3.block-title {
+  margin: 0.1em 0 0.2em 0;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.sidebar .block-title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--theme-color);
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+.sidebar li {
+  padding: 6px 0;
+  border-bottom: 2px solid #f2f1ec;
+}
+.sidebar li:last-child {
+  border: 0;
+}
+
+/* Sidebar -> search form in sidebar */
+.sidebar #search-block-form {
+  display: table;
+  width: 100%;
+}
+.sidebar #search-block-form .form-item,
+.sidebar #search-block-form .form-actions {
+  display: table-cell;
+  vertical-align: middle;
+}
+.sidebar #search-block-form input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #f2f1ec;
+  outline: 0;
+}
+.sidebar #search-block-form input:focus {
+  outline: 0;
+}
+.sidebar #search-block-form input[type="submit"] {
+  border-radius: 2px;
+}

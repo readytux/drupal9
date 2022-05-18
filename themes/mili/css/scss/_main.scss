@@ -1,0 +1,226 @@
+/*
+ * Main
+ */
+
+/* Main -> Admin Tabs */
+ul.page-tabs {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 0 1px 0;
+  border-bottom: 1px solid var(--border-color);
+  list-style: none;
+}
+ul.page-tabs li {
+  display: inline-block;
+  padding: 0;
+}
+ul.page-tabs li a {
+  padding: 4px 10px;
+  background: #e2dfd8;
+  color: #111;
+  transition: all 0.3s ease;
+}
+ul.page-tabs li.active-page-tab a,
+ul.page-tabs li a:hover {
+  background: var(--theme-color);
+  color: #fff;
+}
+
+/* Main -> Node */
+.node,
+.node-promoted,
+.node-sticky,
+.node-unpublished,
+.node-view-mode-full {
+  position: relative;
+}
+.node-content .field--name-body {
+  text-shadow: 1px 1px #fff;
+}
+.node-view-mode-teaser.node-sticky {
+  position: relative;
+  padding: 0 1em 1em 1em;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+/* Main -> node -> teaser view */
+.node-view-mode-teaser {
+  position: relative;
+  margin-bottom: 60px;
+  padding-bottom: 80px;
+  border-bottom: 3px double var(--border-color);
+}
+.node-view-mode-full .node-taxonomy-container {
+  margin: 0;
+}
+
+/* Main -> node -> submitted details */
+.node-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 14px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border-color);
+}
+.author-picture img {
+  width: auto;
+  height: 24px;
+  padding-right: 6px;
+}
+.author-picture .image-field {
+  margin: 0;
+}
+.node-submitted-details,
+.node-submitted-details a {
+  color: #757575;
+}
+.node-submitted-details a:hover {
+  border-bottom: 1px dotted var(--theme-color);
+}
+.node-submitted-details i {
+  margin: 0 0 0 14px;
+  color: var(--theme-color);
+  vertical-align: middle;
+}
+.node-submitted-details i.user-icon {
+  margin-left: 0;
+}
+
+/* Main -> node -> taxonomy and links */
+.node-taxonomy-container,
+.node-links-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 16px 0 16px 0;
+  border-top: 1px solid var(--border-color);
+}
+.node-links-container {
+  border-bottom: 1px solid var(--border-color);
+}
+h3.term-title {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1;
+}
+.term-title i {
+  font-size: 1.1em;
+  color: var(--theme-color);
+}
+ul.taxonomy-terms {
+  margin: 1em 0 0.2em 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+li.taxonomy-term {
+  display: inline-block;
+}
+li.taxonomy-term a {
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px dashed var(--theme-color);
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+li.taxonomy-term a:hover {
+  background: var(--theme-color);
+  color: #fff;
+}
+.node-links-container ul.links {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+ul.inline,
+ul.links.inline {
+  display: inline;
+  padding-left: 0;
+}
+ul.inline li {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  list-style-type: none;
+}
+.node-links-container li {
+  float: left;
+  margin-right: 20px;
+}
+.node-links-container li.node-readmore {
+  float: right;
+  margin-left: 0;
+}
+.node-links-container .comment-comments::before,
+.node-links-container .comment-add::before {
+  padding-right: 2px;
+  font-family: "milicon";
+}
+.node-links-container .comment-comments::before {
+  content: "\f0e6";
+}
+.node-links-container .comment-add::before {
+  content: "\f0e5";
+  vertical-align: 1px;
+}
+.node-readmore {
+  float: left;
+}
+li.node-readmore a {
+  padding: 6px 12px;
+  background: var(--theme-color);
+  color: #fff;
+  -webkit-transition: background 0.4s ease;
+  -moz-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+li.node-readmore a:hover {
+  background: #222;
+  color: #fff;
+}
+li.node-readmore a::after {
+  content: "\f178";
+  padding-left: 10px;
+  font-family: "milicon";
+}
+.node-view-mode-teaser li.comment-add,
+.node-view-mode-teaser li.comment-forbidden {
+  text-align: right;
+}
+
+/* Main -> node -> pager */
+nav.pager {
+  position: relative;
+}
+.pager ul.pager__items {
+  position: relative;
+  margin: 0;
+  padding: 1em 0;
+  list-style: none;
+  list-style-type: none;
+}
+.pager__items {
+  clear: both;
+  text-align: center;
+}
+.pager__item {
+  display: inline-block;
+  padding: 12px 0;
+}
+.pager__item a {
+  padding: 8px 14px;
+  background: #fff;
+  border: 1px dashed var(--theme-color);
+  border-radius: 4px;
+}
+.pager__item a:hover,
+.pager__item.is-active a {
+  background: var(--theme-color);
+  color: #fff;
+}

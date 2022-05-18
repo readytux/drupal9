@@ -1,0 +1,41 @@
+/*
+ * CLearing
+ */
+
+/* Clearing -> main and blocks */
+#main-wrapper::before,
+#main-wrapper::after,
+.home-content .block::before,
+.home-content .block::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Clearing -> Node contents */
+.node-taxonomy-container::before,
+.node-taxonomy-container::after,
+.node-links-container::before,
+.node-links-container::after,
+nav.pager::before,
+nav.pager::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CLearing -> components. */
+.full::before,
+.full::after,
+.container::before,
+.container::after,
+.section::before,
+.section::after,
+.features::before,
+.services::before,
+.features::after,
+.services::after {
+  content: '';
+  display: table;
+  clear: both;
+}

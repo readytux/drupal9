@@ -1,0 +1,50 @@
+/*
+ * Drupal message
+ */
+ .message {
+  position: relative;
+  margin: 20px 0;
+  padding: 14px 14px 14px 64px;
+  color: #ffffff;
+  text-shadow: none;
+}
+.message p {
+  margin: 0;
+}
+.message a,
+.message a:visited {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.message-status {
+  background: #89ad32;
+}
+.message-status::before {
+  content: "\f046";
+  background-color: #759625;
+}
+.message-error {
+  background: #c94d1c;
+}
+.message-error::before {
+  content: "\f06a";
+  background-color: #b3461b;
+}
+.message-warning {
+  background: #cd5a0a;
+}
+.message-warning::before {
+  content: "\f071";
+  background-color: #a44707;
+}
+.message::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53px;
+  height: 100%;
+  font-family: "milicon";
+  font-size: 2em;
+  line-height: 53px;
+  text-align: center;
+}
